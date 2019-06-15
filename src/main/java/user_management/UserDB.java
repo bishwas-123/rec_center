@@ -3,13 +3,21 @@ package user_management;
 import java.util.ArrayList;
 
 public class UserDB {
-    private ArrayList<User> users=new ArrayList<User>();
+    private ArrayList<User> users=new ArrayList<>();
+    private static UserDB userDB=null;
 
-    public UserDB() {
+    private UserDB() {
         users.add(new User("test","test"));
         users.add(new User("admin","admin"));
         users.add(new User("admin","root"));
         users.add(new User("Prakash","Koju"));
+    }
+
+    protected static UserDB getInstance(){
+        if(userDB==null){
+            userDB=new UserDB();
+        }
+        return userDB;
     }
 
     public ArrayList<User> getUsers() {
@@ -20,16 +28,15 @@ public class UserDB {
 //        this.users = users;
 //    }
 
-    public void addUser(User user){
+    protected void addUser(User user){
         users.add(user);
     }
 
 
-    public boolean checkUser(User newUser){
+    protected boolean checkUser(User newUser){
         if(users.contains(newUser))
             return true;
-        else
-            return false;
+        return false;
 
 //        if(users.indexOf(newUser)<0)
 //            return false;

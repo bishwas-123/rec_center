@@ -4,17 +4,17 @@ import java.time.LocalDate;
 import java.util.Objects;
 
 public class User {
-    Integer userId;
-    LocalDate memberSince;
-    String userName;
-    String password;
-    String fullName;
-    String occupation;
-    String address;
-    String contact;
-    String email;
-    LocalDate dob;
-    String gender;
+    private Integer userId;
+    private LocalDate memberSince;
+    private String userName;
+    private String password;
+    private String fullName;
+    private String occupation;
+    private String address;
+    private String contact;
+    private String email;
+    private LocalDate dob;
+    private String gender;
 
     public User() {
         this.userId=(int)Math.random()*1000+100;

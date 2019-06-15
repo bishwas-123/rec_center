@@ -9,7 +9,7 @@ import java.io.IOException;
 public class LoginServlet extends HttpServlet {
 
 
-    UserDB userDb=new UserDB();
+    private UserDB userDb=UserDB.getInstance();
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
