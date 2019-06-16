@@ -18,7 +18,7 @@
     <div class="card card-container">
         <img id="profile-img" class="profile-img-card" src="../resources/img/avatar_2x.png" />
         <p id="profile-name" class="profile-name-card"></p>
-        
+
         <form class="form-signin" id="form-signin" method="post" action="${contextPath}/admin">
             <span id="reauth-email" class="reauth-email"></span>
             <input type="email" name="username" id="inputEmail" class="form-control" placeholder="Email address" autofocus>
@@ -29,6 +29,8 @@
                 </label>
             </div>
             <button id="logIn-btn" class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Sign in</button>
+            <a href="/signup" class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Sign up</a>
+
         </form><!-- /form -->
         <a href="#" class="forgot-password">
             Forgot the password?

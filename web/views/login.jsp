@@ -29,6 +29,8 @@
                 </label>
             </div>
             <button id="logIn-btn" class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Sign in</button>
+            <a href="/signup" class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Sign up</a>
+
         </form><!-- /form -->
         <a href="#" class="forgot-password">
             Forgot the password?

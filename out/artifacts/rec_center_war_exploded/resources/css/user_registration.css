@@ -1,0 +1,74 @@
+.message{
+    color:red;
+    font-size: 10px;
+}
+.pDiv{
+    text-align: center;
+    margin: auto;
+    border:2px solid grey;
+    border-radius: 20px;
+    padding: 20px;
+    line-height: 1.2;
+    background-color: aquamarine;
+    line-height: 1.5;
+    width: 350px;
+    text-align: left;
+}
+
+.pSpan{
+    display: block;
+}
+
+#signupBtn,#signinBtn{
+    text-align: center;
+    font-weight: bold;
+    width: 200px;
+    background: lightskyblue;
+    border: 1px solid lightskyblue;
+    border-radius: 5px;
+    display: block;
+    padding:5px;
+}
+#signupBtn:hover, #signinBtn:hover{
+    background: lightblue;
+}
+
+/*#signinBtn{*/
+/*    text-align: center;*/
+/*    font-weight: bold;*/
+/*    width: 200px;*/
+/*    background: lightskyblue;*/
+/*    border: 1px solid lightskyblue;*/
+/*    border-radius: 5px;*/
+/*    display: block;*/
+/*    padding:5px;*/
+/*}*/
+/*#signinBtn:hover{*/
+/*    background: lightblue;*/
+/*}*/
+
+a{
+    text-decoration: none !important;
+}
+
+
+
+legend{
+    text-align: left;
+}
+
+fieldset legend{
+    text-align: center;
+    font-weight: bold;
+}
+
+#centerText{
+    text-align: center;
+}
+
+#signupMessage{
+    height: 20px;
+    text-align: center;
+    color: green;
+    font-weight: bold;
+}
