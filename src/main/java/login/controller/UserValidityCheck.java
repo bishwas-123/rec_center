@@ -1,8 +1,6 @@
-package login;
-import com.google.gson.Gson;
+package login.controller;
 import login.model.User;
-import login.model.UserList;
-
+import login.dao.UserList;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -13,14 +11,12 @@ import java.io.PrintWriter;
 
 @WebServlet("/checkuser")
 public class UserValidityCheck extends HttpServlet {
-    public static String result;
     private UserList userList;
     @Override
     public void init() throws ServletException {
        // Gson mapper = new Gson();
         userList=new UserList();
     }
-
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         super.doGet(req, resp);
@@ -29,28 +25,15 @@ public class UserValidityCheck extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String username=req.getParameter("check");
         PrintWriter out = resp.getWriter();
-       // int st=0;
-        String str=new String();
         int count=0;
-
         for(User users:userList.getAllUsers() ){
-
               if(users.getUsername().startsWith(username.trim())){
                   count=1;
                   break;
-
-
               }else{
                   count=0;
-
-
               }
-
-
         }
         out.print(count);
-
-
-
     }
 }

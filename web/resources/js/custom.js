@@ -1,15 +1,15 @@
 $(function(){
     (function(){
+        "use strict"
         $("#form-signin").on("submit",function(event){
             if($("#inputEmail").val()=="" || $("#inputPassword").val()==""){
                 $("#profile-name").text("Fields Should not be empty !").css("color","red");
-                if($("#inputEmail").val()=="") $("#inputEmail").focus();
-                if($("#inputPassword").val()=="") $("#inputPassword").focus();
+                if($("#inputEmail").val()=="") {$("#inputEmail").focus();}
+                else{ $("#inputPassword").focus();}
                 event.preventDefault();
             }
         });
         $("#inputEmail").on("blur",function (){
-           // alert();
                 $(this).trigger("keypress");
         });
         $("#inputEmail").on("keypress",function () {
@@ -18,7 +18,6 @@ $(function(){
                 var email=$(this).val();
                 $.post(url,{check:email},validateUser);
             }
-
         });
 
 
@@ -41,15 +40,6 @@ $(function(){
             $("#profile-name").empty();
             $("#profile-name").html(result);
        }
-
-        function processData(data){
-            //data = JSON.parse(data);
-            var td0=$('<td>').text(data.id);
-            var td1 = $('<td>').text(data.name);
-            var td2 = $('<td>').text(data.price);
-            var tr = $('<tr>').append(td0).append(td1).append(td2);
-            $('#tbl_products>tbody').append(tr);
-        }
     })();
 
 })
