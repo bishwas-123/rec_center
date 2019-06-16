@@ -1,4 +1,4 @@
-package login.controller;
+package controller.login;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;

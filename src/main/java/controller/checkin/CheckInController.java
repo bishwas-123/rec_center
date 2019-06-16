@@ -1,4 +1,4 @@
-package checkin;
+package controller.checkin;
 
 public class CheckInController {
 

@@ -27,7 +27,7 @@ public class UserDAO {
         return users;
     }
 //
-//    public void setUsers(ArrayList<User> users) {
+//    public void setUsers(ArrayList<Admin> users) {
 //        this.users = users;
 //    }
 
@@ -50,7 +50,7 @@ public class UserDAO {
 //        else
 //            return true;
 
-//        for(User user: users){
+//        for(Admin user: users){
 //            if(user.equals(newUser))
 //                return true;
 //        }

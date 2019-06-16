@@ -1,15 +1,15 @@
-package login.controller;
+package controller.login;
 
 
-import login.model.User;
-import login.dao.UserList;
+import model.Admin;
+import dao.UserList;
 
 public class Auth {
     public static boolean authenticate(String userName, String password) {
-       // User userData=new User("bishwas","bishwas1");
+       // Admin userData=new Admin("bishwas","bishwas1");
         UserList userList=new UserList();
        // userList.addUsers(userData);
-        for(User u:userList.getUsernames()){
+        for(Admin u:userList.getUsernames()){
              if(u.getUsername().equals(userName)&& u.getPassword().equals(password)){
                  return  true;
              }

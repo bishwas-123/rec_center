@@ -1,6 +1,6 @@
-package login.controller;
-import login.model.User;
-import login.dao.UserList;
+package controller.login;
+import model.Admin;
+import dao.UserList;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -26,7 +26,7 @@ public class UserValidityCheck extends HttpServlet {
         String username=req.getParameter("check");
         PrintWriter out = resp.getWriter();
         int count=0;
-        for(User users:userList.getAllUsers() ){
+        for(Admin users:userList.getAllUsers() ){
               if(users.getUsername().startsWith(username.trim())){
                   count=1;
                   break;
