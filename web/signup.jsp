@@ -9,19 +9,29 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/resources/css/user_registration.css" type="text/css" rel="stylesheet"/>
-      <script type="text/javascript"
-              src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <script type="text/javascript" src="/resources/js/signScript.js"></script>
+<%--    <meta name="viewport" content="width=device-width, initial-scale=1.0">--%>
+<%--    <link href="/resources/css/user_registration.css" type="text/css" rel="stylesheet"/>--%>
+<%--      <script type="text/javascript"--%>
+<%--              src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>--%>
+<%--      <script type="text/javascript" src="/resources/js/signScript.js"></script>--%>
 
+      <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+      <meta name='viewport' content='width=device-width, initial-scale=1'>
+      <link rel="stylesheet" type="text/css" href="assets/css/login.css"/>
+      <link href="assets/css/bootstrap.css" rel="stylesheet" id="bootstrap-css">
+
+      <script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/jquery.js"></script>
       <title>SignUp</title>
   </head>
   <body>
   <div id="signupMessage"></div>
     <div class="pDiv">
+        <div class="container">
+            <div class="card card-container">
 
-<%--      <form method="post" action="/signup">--%>
+            </div>
+        </div>
         <fieldset><legend id="#centerText">Sign-Up Form</legend>
         <fieldset><legend>Log Detail</legend>
         <span class="pSpan">

@@ -1,3 +1,4 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -72,7 +73,7 @@
         <li class="nav-item"><a href="#" class="nav-link">Resources</a></li>
       
         
-        <li class="nav-item"><a href="logout.html" class="nav-link">Logout</a></li>
+        <li class="nav-item"><a href="/" class="nav-link">Logout</a></li>
       </ul>
     </div>
   </div>

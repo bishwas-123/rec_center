@@ -49,7 +49,7 @@ public class LoginController extends HttpServlet {
 //            RequestDispatcher dispatcher=request.getRequestDispatcher("home.jsp");
 //            dispatcher.forward(request,response);
             //response.sendRedirect("home.jsp");
-            response.sendRedirect("users.html");
+            response.sendRedirect("users.jsp");
         }
         else {
             String loginMessage="Invalid Email or Password!";
