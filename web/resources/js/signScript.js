@@ -1,10 +1,43 @@
 $(function(){
 
 	'use strict';
+	$('#userName').blur(function () {
+		$.ajax({
+			url: "checkuser",
+			type: "get",
+			data: {
+				userName:$(this).val()
+			},
+			success: function(response) {
+				//Do Something
+			},
+			error: function(xhr) {
+				$.alert('user name already exits, try new');
+				$("#userName").focus();
+				xhr.preventDefault();
+			}
+		});
+	});
 
-	$('#signupBtn').click(addUser);
+	$('#gotoLogin').click(gotoLogin);
+	$('#gotoSignUp').click(gotoSignup);
+	$('#signupBtn').click(function () {
+		$(".nullCheck").each(function (e) {
+			if (this.value== "") {
+				// alert("All user information is required");
+				$.alert({
+					title: 'Attention!',
+					content: this.name+' is required',
+				});
+				e.preventDefault();
+			}
+		});
+		addUser();
+	});
+
 
 	function addUser(){
+
 		var userName = $('#userName').val();
 		var password = $ ('#password').val();
 		var fullName = $ ('#fullName').val();
@@ -27,15 +60,31 @@ $(function(){
 				alert( "error" );
 			})
 			.always(function() {
-				homePage();
+				logInPage();
 			})();
 	}
 
-	function homePage(){
+
+	function logInPage(){
 		setTimeout(function() {
 			window.location.href = "/login";
-		}, 3000);
+		}, 2000);
 	}
 
-})
+
+
+	function gotoLogin() {
+		$.get("login",{},function(responseText) {
+			$('body').html(responseText);
+		});
+
+	}
+	function gotoSignup() {
+		$.get("signup",{},function(responseText) {
+			$('body').html(responseText);
+		});
+
+	}
+
+});
 

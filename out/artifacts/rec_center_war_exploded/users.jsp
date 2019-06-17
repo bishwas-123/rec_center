@@ -99,7 +99,7 @@
 <footer class="footer">
 
   <div class="footer-copy">
-    <i class="fa fa-copyright"></i> Copyright - Ananda.
+    <i class="fa fa-copyright"></i> Copyright - Bishwas, Medor and Prakash.
   </div>
 </footer>
 

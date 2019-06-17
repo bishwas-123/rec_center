@@ -502,7 +502,7 @@
         <!-- General Info Column -->
         <div class="col-md-4 col-sm-6 footer-info-block">
           <h6>Ananda Rec Center</h6>
-          <p>The Grace Ananda Recreation Center is a 60,000-square-foot indoor facility, one of the largest indoor university sports facilities in the state of Iowa.
+          <p>The MUM Recreation Center is a 60,000-square-foot indoor facility, one of the largest indoor university sports facilities in the state of Iowa.
             Open to Everyone!
           </p>
           
@@ -517,7 +517,7 @@
           <p>1000 Granville Ave.Fairfield, IA 52556<br>
             641-472-1112<br>
             1-987-654-321<br>
-            <a href="#">contact@ananda@gmail.com</a>
+<%--            <a href="#">contact@mum.edu</a>--%>
           </p>
 
           <ul class="footer-social-links">
@@ -589,7 +589,7 @@
     </div>
   </div>
   <div class="footer-copy">
-    <i class="fa fa-copyright"></i> Copyright - Ananda.
+    <i class="fa fa-copyright"></i> Copyright - Bishwas, Medor and Prakash.
   </div>
 </footer>
 
@@ -609,7 +609,7 @@
       </div>
       <div class="modal-body">
 
-        <p class="description">The Grace Ananda Recreation Center is a 60,000-square-foot indoor facility, one of the largest indoor university sports facilities in the state of Iowa.
+        <p class="description">The MUM Recreation Center is a 60,000-square-foot indoor facility, one of the largest indoor university sports facilities in the state of Iowa.
 
             Open to Everyone!</p>
 

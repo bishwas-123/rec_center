@@ -21,7 +21,14 @@ public class UserValidityCheck extends HttpServlet {
     }
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doGet(req, resp);
+        String userName=req.getParameter("userName");
+        boolean matching=false;
+        PrintWriter out = resp.getWriter();
+        for(User user:userList.getUsers()){
+            if (user.getUserName().matches(userName))
+                matching=true;
+        }
+        out.print(matching);
     }
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

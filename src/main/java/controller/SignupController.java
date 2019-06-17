@@ -27,9 +27,9 @@ public class SignupController extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//        RequestDispatcher dispatcher=req.getRequestDispatcher("signup.jsp");
-//        dispatcher.forward(req,resp);
-        resp.sendRedirect("signup.jsp");
+        RequestDispatcher dispatcher=req.getRequestDispatcher("signup.jsp");
+        dispatcher.forward(req,resp);
+//        resp.sendRedirect("signup.jsp");
     }
 
 

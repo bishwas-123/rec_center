@@ -19,7 +19,7 @@
 
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery.js"></script>
-
+    <script type="text/javascript" src="resources/js/signScript.js"></script>
   <script>var basePath="${contextPath}";</script>
 
     <title>Login</title>
@@ -50,7 +50,8 @@
 
         <fieldset>
           <small>Not Yet Registered?</small>
-          <a href="/signup" class="btn btn-lg btn-primary btn-block btn-signin">Sign Up Here</a>
+<%--          <a href="/signup" class="btn btn-lg btn-primary btn-block btn-signin">Sign Up Here</a>--%>
+            <input class="btn btn-lg btn-primary btn-block btn-signin" type="button" id="gotoSignUp" value="Sign Up Here"/>
         </fieldset>
       </form>
     </div><!-- /card-container -->

@@ -18,9 +18,13 @@
       <script src="assets/js/bootstrap.min.js"></script>
       <script src="assets/js/jquery.js"></script>
       <script type="text/javascript" src="resources/js/signScript.js"></script>
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+
       <title>SignUp</title>
   </head>
-  <body>
+  <body><form id="form-signUp">
         <div class="container">
             <div class="card signup-container">
             <div class="row">
@@ -29,37 +33,39 @@
             <div class="row">
             <div class="col-6">
 
-                <label>Set User-Name:<input class="form-control" type="text" autofocus name="userName" id="userName"/></label>
-                <label>Email Address:<input  class="form-control" type="email" name="email" id="email"/></label>
-                <label>Set password:<input class="form-control" type="password" name="password" id="password"/></label>
-                <label>Full Name:<input class="form-control" type="text" name="fullName" id="fullName"/></label>
+                <label>User-Name: <input class="form-control nullCheck" type="text" autofocus name="userName" id="userName" required/></label>
+                <label>Email Address:<input class="form-control nullCheck" type="email" name="email" id="email" required/></label>
+                <label>Password:<input class="form-control nullCheck" type="password" name="password" id="password" required/></label>
+                <label>Full Name:<input class="form-control nullCheck" type="text" name="fullName" id="fullName" required/></label>
                 <label>Occupation:</label>
-                    <select name="occupation" id="occupation" class="form-control">
+                    <select name="occupation" id="occupation" class="form-control nullCheck" required>
                     <option value="Faculty">Faculty</option>
                     <option value="Staff">Staff</option>
                     <option value="Student">Student</option>
                     <option value="Local Resident">Local Resident</option>
                     <option value="Other">Other</option>
                     </select>
+                <label>Address:<input  class="form-control nullCheck" type="text" name="address" id="address" required/></label>
+                <label>Contact No.:<input class="form-control nullCheck"  type="tel" name="contact" id="contact" required/></label>
+
             </div>
             <div class="col-6">
-                <label>Address:<input  class="form-control" type="text" name="address" id="address"/></label>
-                <label>Contact No.:<input class="form-control"  type="tel" name="contact" id="contact"/></label>
-                <label>Date of Birth:<input  class="form-control" type="date" name="dob" id="dob"/></label>
+                <label>Date of Birth:<input  class="form-control" type="date" name="dob" id="dob" required/></label>
                 <fieldset class="gender"><label>Gender: </label>
-                    <label><input type="radio" name="gender" value="Male"/> Male</label>
-                    <label><input type="radio" name="gender" value="Female"/> Female</label>
-                    <label><input type="radio" name="gender" value="Other"/> Other</label></fieldset>
+                    <label><input type="radio" name="gender" value="Male" required/> Male</label>
+                    <label><input type="radio" name="gender" value="Female" required/> Female</label>
+                    <label><input type="radio" name="gender" value="Other" required/> Other</label></fieldset>
 
             <label>Image:</label>
-                    <input  class="form-control" type = "file" name = "file" size = "20"/><input type = "button" value = "Upload File" />
-
+                <input class="form-control" type = "file" name = "file" size = "20" value="#"/>
+                <input class="btn btn-lg btn-primary btn-block btn-signin" type = "button" value = "Upload File" />
+            <hr/><button type="reset" class="btn btn-lg btn-primary btn-block btn-signin">Reset Form</button>
             </div></div>
-            <button class="btn btn-lg btn-primary btn-block btn-signin" id="signupBtn" type="submit" value="signup">Sign Up</button>
+            <input class="btn btn-lg btn-primary btn-block btn-signin" id="signupBtn" type="button" value="Sign-Up"/>
                 <small>Already have an account?</small>
-                <a class="btn btn-lg btn-primary btn-block btn-signin" href="/login" id="signinBtn">Sign In Here</a>
+                <input class="btn btn-lg btn-primary btn-block btn-signin" id="gotoLogin" type="button" value="Sign-In"/>
             </div>
         </div>
-        </div>
+  </form>
   </body>
 </html>
