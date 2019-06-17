@@ -29,9 +29,10 @@ public class PageFilter implements Filter {
          String currentUrl=((HttpServletRequest) request).getRequestURI();
          boolean isHomeRequest= currentUrl.equals(currentRequest+"/");
          boolean isLoginRequest=currentUrl.equals(currentRequest+"/login") || currentUrl.equals(currentRequest+"/login.jsp");
-         boolean isValidUser=email!="" && userDAO.getUsers().stream().filter(user -> user.getEmail().equals(email)).count()>0;
+        boolean isSignUpRequest=currentUrl.equals(currentRequest+"/signup") || currentUrl.equals(currentRequest+"/signup.jsp");
+        boolean isValidUser=email!="" && userDAO.getUsers().stream().filter(user -> user.getEmail().equals(email)).count()>0;
          boolean isStaticResource = currentUrl.startsWith("/resources/")|| currentUrl.startsWith("/assets/");
-         if ( isHomeRequest || isLoginRequest || isValidUser || isStaticResource)
+         if ( isHomeRequest || isLoginRequest || isSignUpRequest || isValidUser || isStaticResource)
             chain.doFilter(request, response);
         else
         {

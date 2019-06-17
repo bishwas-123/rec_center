@@ -20,17 +20,22 @@ $(function(){
 		$.post('signup',{user: JSON.stringify(user)})
 
 			.done(function() {
-				// alert( "successfully added" );
-				$('#signupMessage').text("Successfully added!");
+				$('.card')
+					.html("<div>Successfully added! <br> Redirecting to Login Page Shortly</div>");
 			})
 			.fail(function() {
 				alert( "error" );
 			})
-			// .always(function() {
-			// 	alert( "finished" );
-			// })
+			.always(function() {
+				homePage();
+			})();
 	}
 
+	function homePage(){
+		setTimeout(function() {
+			window.location.href = "/login";
+		}, 3000);
+	}
 
 })
 

@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+    "use strict";
     // DOM ready
 
     // Test data
@@ -8,10 +9,6 @@ $( document ).ready(function() {
      * will load some test data and the loadProfile
      * will do the changes in the UI
      */
-    if(location.reload){
-        $('.message').text('');
-    }
-
     // testLocalStorageData();
     // Load profile if it exits
     loadProfile();

@@ -27,48 +27,28 @@
     border: 1px solid lightskyblue;
     border-radius: 5px;
     display: block;
-    padding:5px;
+    padding:10px;
 }
 #signupBtn:hover, #signinBtn:hover{
     background: lightblue;
 }
-
-/*#signinBtn{*/
-/*    text-align: center;*/
-/*    font-weight: bold;*/
-/*    width: 200px;*/
-/*    background: lightskyblue;*/
-/*    border: 1px solid lightskyblue;*/
-/*    border-radius: 5px;*/
-/*    display: block;*/
-/*    padding:5px;*/
-/*}*/
-/*#signinBtn:hover{*/
-/*    background: lightblue;*/
-/*}*/
 
 a{
     text-decoration: none !important;
 }
 
 
-
-legend{
-    text-align: left;
-}
-
-fieldset legend{
-    text-align: center;
-    font-weight: bold;
-}
-
 #centerText{
     text-align: center;
 }
 
 #signupMessage{
-    height: 20px;
+    /*height: 20px;*/
     text-align: center;
     color: green;
     font-weight: bold;
+}
+
+.gender{
+    display: inline;
 }

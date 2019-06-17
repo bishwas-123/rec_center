@@ -1,7 +1,7 @@
 
 // Copyright 2012 Google Inc. All rights reserved.
 (function(){
-
+    "use strict";
     var data = {
     "resource": {
       "version":"1",

@@ -6,8 +6,10 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
+<c:set var="contextPath" value="${pageContext.request.contextPath}"/>
   <head>
 <%--    <link href="/resources/css/user_registration.css" type="text/css" rel="stylesheet"/>--%>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -18,6 +20,8 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery.js"></script>
 
+  <script>var basePath="${contextPath}";</script>
+
     <title>Login</title>
   </head>
   <body>
@@ -25,7 +29,7 @@
     <div class="card card-container">
       <img id="profile-img" class="profile-img-card" src="assets/img/avatar_2x.png" />
       <p id="profile-name" class="profile-name-card"></p>
-      <form class="form-signin" method="post" action="/login">
+      <form class="form-signin" id="form-signin" method="post" action="/login">
 
         <span id="reauth-email" class="reauth-email">
           <small class="message">
@@ -52,5 +56,6 @@
     </div><!-- /card-container -->
   </div><!-- /container -->
   <script src="assets/js/login.js"></script>
+  <script src="assets/js/custom.js"></script>
   </body>
 </html>

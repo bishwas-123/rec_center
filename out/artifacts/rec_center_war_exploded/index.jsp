@@ -8,13 +8,8 @@
   <meta name="viewport" content='width=device-width, initial-scale=1, width=device-width'>
   <meta name="description" content="Responsive HTML template for gym or fitness studio">
   <meta name="keywords" content="gym, fitness, workout, sports, website, template, html">
+  <script src="assets/js/indexGtax.js" type="javascript"></script>
 
-  <!-- <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" rel="stylesheet"> -->
-
-  
-
-  
   <link rel="stylesheet" href="assets/css/styles.min.css">
   <link rel="stylesheet" href="assets/css/custom.css">
 
@@ -22,15 +17,13 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
   <link rel="shortcut icon" href="assets/img/favicon.ico">
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119687618-1"></script> -->
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+<%-- <script>--%>
+<%--    window.dataLayer = window.dataLayer || [];--%>
+<%--    function gtag(){dataLayer.push(arguments);}--%>
+<%--    gtag('js', new Date());--%>
 
-    gtag('config', 'UA-119687618-1');
-  </script>
+<%--    gtag('config', 'UA-119687618-1');--%>
+<%--  </script>--%>
 </head>
 
 <body class="gym-city">
@@ -63,10 +56,10 @@
          data-target="#gymCityNav"></i>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a href="#" class="nav-link" id="navHome">Home</a> <!-- to highlight a selected nav item add "active" class -->
+          <a href="/" class="nav-link" id="navHome">Home</a> <!-- to highlight a selected nav item add "active" class -->
         </li>
      
-        <li class="nav-item"><a href="#" class="nav-link">Membership</a></li>
+        <li class="nav-item"><a href="/signup" class="nav-link">Membership</a></li>
         <li class="nav-item"><a href="#" class="nav-link">Schedule</a></li>
       
         <li class="nav-item"><a href="#" class="nav-link">Contacts</a></li>

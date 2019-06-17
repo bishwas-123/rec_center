@@ -66,7 +66,7 @@
          data-target="#gymCityNav"></i>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a href="#" class="nav-link" id="navHome">Home</a> <!-- to highlight a selected nav item add "active" class -->
+          <a href="/" class="nav-link" id="navHome">Home</a> <!-- to highlight a selected nav item add "active" class -->
         </li>
      
         <li class="nav-item"><a href="#" class="nav-link">Users</a></li>

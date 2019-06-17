@@ -19,10 +19,10 @@ public class LoginController extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         request.getSession().invalidate();
-//        RequestDispatcher dispatcher=request.getRequestDispatcher("login.jsp");
-//        dispatcher.forward(request,response);
+        RequestDispatcher dispatcher=request.getRequestDispatcher("login.jsp");
+        dispatcher.forward(request,response);
 
-        response.sendRedirect("login.jsp");
+//        response.sendRedirect("login.jsp");
 
     }
 
@@ -35,6 +35,7 @@ public class LoginController extends HttpServlet {
 
         //Setting Cookie for userName in conjuction with 'Remember Me' checkbox in login.jsp
         Cookie cookie = new Cookie("email", email);
+        cookie.setMaxAge(60*60*24*30);
         boolean isRememberMe=(rem!=null && rem.equals("on"));
         if(!isRememberMe) {
             cookie.setValue("");
@@ -46,10 +47,10 @@ public class LoginController extends HttpServlet {
         if(userDAO.checkUser(new User(email,password))){
             HttpSession session=request.getSession();
             session.setAttribute("email",email);
-//            RequestDispatcher dispatcher=request.getRequestDispatcher("home.jsp");
-//            dispatcher.forward(request,response);
+            RequestDispatcher dispatcher=request.getRequestDispatcher("users.jsp");
+            dispatcher.forward(request,response);
             //response.sendRedirect("home.jsp");
-            response.sendRedirect("users.jsp");
+            //response.sendRedirect("users.jsp");
         }
         else {
             String loginMessage="Invalid Email or Password!";
