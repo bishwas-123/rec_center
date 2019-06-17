@@ -27,7 +27,7 @@ public class PageFilter implements Filter {
         String email=currentUserSession.getAttribute("email")==null?"":currentUserSession.getAttribute("email").toString();
          String currentRequest=((HttpServletRequest) request).getContextPath();
          String currentUrl=((HttpServletRequest) request).getRequestURI();
-         boolean isHomeRequest= currentUrl.equals(currentRequest+"/");
+         boolean isHomeRequest= currentUrl.equals(currentRequest+"/") || currentUrl.equals(currentRequest+"/checkuser");
          boolean isLoginRequest=currentUrl.equals(currentRequest+"/login") || currentUrl.equals(currentRequest+"/login.jsp");
         boolean isSignUpRequest=currentUrl.equals(currentRequest+"/signup") || currentUrl.equals(currentRequest+"/signup.jsp");
         boolean isValidUser=email!="" && userDAO.getUsers().stream().filter(user -> user.getEmail().equals(email)).count()>0;

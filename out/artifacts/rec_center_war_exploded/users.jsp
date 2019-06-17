@@ -71,8 +71,6 @@
      
         <li class="nav-item"><a href="#" class="nav-link">Users</a></li>
         <li class="nav-item"><a href="#" class="nav-link">Resources</a></li>
-      
-        
         <li class="nav-item"><a href="/" class="nav-link">Logout</a></li>
       </ul>
     </div>

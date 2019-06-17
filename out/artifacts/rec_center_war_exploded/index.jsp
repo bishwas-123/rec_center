@@ -17,13 +17,6 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
   <link rel="shortcut icon" href="assets/img/favicon.ico">
 
-<%-- <script>--%>
-<%--    window.dataLayer = window.dataLayer || [];--%>
-<%--    function gtag(){dataLayer.push(arguments);}--%>
-<%--    gtag('js', new Date());--%>
-
-<%--    gtag('config', 'UA-119687618-1');--%>
-<%--  </script>--%>
 </head>
 
 <body class="gym-city">
