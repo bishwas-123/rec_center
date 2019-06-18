@@ -19,13 +19,13 @@ public class User {
     private String dob;
     private String gender;
     private String image;
-    private ArrayList<Check> checkList;
+
 
 
     public User() {
         this.userId= (int)(Math.random()*10000)+1000;
         this.memberSince=LocalDate.now();
-        checkList=new ArrayList<>();
+
     }
 
     public User(String email, String password) {
@@ -140,19 +140,6 @@ public class User {
 
     public void setImage(String image) {
         this.image = image;
-    }
-
-    public ArrayList<Check> getCheckList() {
-        return checkList;
-    }
-
-    public void setCheckList(ArrayList<Check> checkList) {
-        this.checkList = checkList;
-    }
-
-
-    public void check(){
-        checkList.add(new Check());
     }
 
     @Override
