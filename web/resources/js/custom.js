@@ -1,7 +1,8 @@
 $(function(){
     (function(){
-        "use strict"
+        //"use strict"
         $("#form-signin").on("submit",function(event){
+
             if($("#inputEmail").val()=="" || $("#inputPassword").val()==""){
                 $("#profile-name").text("Fields Should not be empty !").css("color","red");
                 if($("#inputEmail").val()=="") {$("#inputEmail").focus();}
@@ -41,7 +42,38 @@ $(function(){
             $("#profile-name").html(result);
        }
     })();
+    function currentTime() {
+        var date = new Date(); /* creating object of Date class */
+        var hour = date.getHours();
+        var min = date.getMinutes();
+        var sec = date.getSeconds();
+        hour = updateTime(hour);
+        min = updateTime(min);
+        sec = updateTime(sec);
+        document.getElementById("clock").innerText = hour + " : " + min + " : " + sec; /* adding time to the div */
+        var t = setTimeout(function(){ currentTime() }, 1000); /* setting timer */
+    }
 
-})
+    function updateTime(k) {
+        if (k < 10) {
+            return "0" + k;
+        }
+        else {
+            return k;
+        }
+    }
+
+    currentTime(); /* calling currentTime() function to initiate the process */
+
+
+
+
+$("#punch-in-out").on("submit",function(event){
+    var test=$("#userId-checkIn").val();
+    if(!test.match(/^\d+$/)){
+        return false;
+    }
+});
+}(jQuery));
 
 

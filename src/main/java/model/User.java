@@ -1,7 +1,6 @@
 package model;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.Objects;
 
 public class User {
@@ -17,7 +16,15 @@ public class User {
     private String dob;
     private String gender;
     private String image;
+    private String checkInTime;
 
+    public String getCheckInTime() {
+        return checkInTime;
+    }
+
+    public void setCheckInTime(String checkInTime) {
+        this.checkInTime = checkInTime;
+    }
 
     public User() {
         this.userId= (int)(Math.random()*10000)+1000;
@@ -29,8 +36,7 @@ public class User {
         this.email = email;
         this.password = password;
     }
-
-    public User(String userName, String password, String fullName, String occupation,
+    public User(Integer userId,String userName, String password, String fullName, String occupation,
                 String address, String contact, String email, String dob, String gender) {
         this(email,password);
         this.fullName = fullName;
@@ -40,6 +46,7 @@ public class User {
         this.userName = userName;
         this.dob = dob;
         this.gender = gender;
+        this.userId=userId;
     }
 
     public String getUserName() {
@@ -137,13 +144,6 @@ public class User {
     public void setImage(String image) {
         this.image = image;
     }
-
-
-
-
-
-
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -152,7 +152,6 @@ public class User {
         return email.equals(user.email) &&
                 password.equals(user.password);
     }
-
     @Override
     public int hashCode() {
         return Objects.hash(email, password);
