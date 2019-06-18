@@ -62,7 +62,7 @@
   </div>
 </nav>
 
-
+<div id="ajaxDynamics"><h1>Hello Prakahsh ajax</h1></div>
 <!-- home page content-->
 <section id="topBanner" class="home bg-darken carousel slide" data-ride="carousel">
   <!-- Carousel Navigation -->

@@ -1,4 +1,3 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,15 +7,29 @@
   <meta name="viewport" content='width=device-width, initial-scale=1, width=device-width'>
   <meta name="description" content="Responsive HTML template for gym or fitness studio">
   <meta name="keywords" content="gym, fitness, workout, sports, website, template, html">
-  <script src="assets/js/indexGtax.js" type="javascript"></script>
 
-  <link rel="stylesheet" href="assets/css/styles.min.css">
-  <link rel="stylesheet" href="assets/css/custom.css">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" rel="stylesheet"> -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
-  <link rel="shortcut icon" href="assets/img/favicon.ico">
 
+
+
+  <link rel="stylesheet" href="resources/css/styles.min.css">
+  <link rel="stylesheet" href="resources/css/custom.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="resources/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="resources/img/favicon-16x16.png">
+  <link rel="shortcut icon" href="resources/img/favicon.ico">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119687618-1"></script> -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-119687618-1');
+  </script>
 </head>
 
 <body class="gym-city">
@@ -32,14 +45,14 @@
 
     <!-- Navbar toggler. Shown for mobile devices (https://getbootstrap.com/docs/4.0/components/navbar/#toggler) -->
     <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#gymCityNav"
-      aria-controls="gymCityNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-      >
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#gymCityNav"
+            aria-controls="gymCityNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+    >
       <i class="fa fa-bars" aria-hidden="true"></i>
     </button>
 
@@ -49,20 +62,20 @@
          data-target="#gymCityNav"></i>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a href="/" class="nav-link" id="navHome">Home</a> <!-- to highlight a selected nav item add "active" class -->
+          <a href="#" class="nav-link" id="navHome">Home</a> <!-- to highlight a selected nav item add "active" class -->
         </li>
-     
-        <li class="nav-item"><a href="/signup" class="nav-link">Membership</a></li>
+
+        <li class="nav-item"><a href="signup" class="nav-link">Membership</a></li>
         <li class="nav-item"><a href="#" class="nav-link">Schedule</a></li>
-      
+
         <li class="nav-item"><a href="#" class="nav-link">Contacts</a></li>
-        <li class="nav-item"><a href="/login" class="nav-link">Login</a></li>
+        <li class="nav-item"><a href="login" class="nav-link">Login</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<div id="ajaxDynamics"><h1>Hello Prakahsh ajax</h1></div>
+
 <!-- home page content-->
 <section id="topBanner" class="home bg-darken carousel slide" data-ride="carousel">
   <!-- Carousel Navigation -->
@@ -76,49 +89,49 @@
 
     <!-- Banner 1 -->
     <div class="carousel-item active">
-      <img class="d-block w-100" src="assets/img/top-banner-01.jpg" alt="First slide">
+      <img class="d-block w-100" src="resources/img/top-banner-01.jpg" alt="First slide">
 
       <div class="carousel-caption">
         <div class="carousel-caption-text clearfix">
           <div data-aos="fade-right" data-aos-delay="500" data-aos-duration="500">Welcome to </div>
           <div data-aos="fade-right" data-aos-delay="600" data-aos-duration="500">Mum Rec Center</div>
         </div>
-        <a href="#" 
-          class="btn btn-primary btn-large" 
-          data-aos="zoom-in-up" 
-          data-aos-delay="700"
-          data-aos-duration="500"
-          data-scroll-goto="0"
-          >Get a free 3 day pass</a>
+        <a href="#"
+           class="btn btn-primary btn-large"
+           data-aos="zoom-in-up"
+           data-aos-delay="700"
+           data-aos-duration="500"
+           data-scroll-goto="0"
+        >Get a free 3 day pass</a>
       </div>
     </div>
 
     <!-- Banner 2 -->
     <div class="carousel-item">
-      <img class="d-block w-100" src="assets/img/top-banner-02.jpg" alt="Second slide">
+      <img class="d-block w-100" src="resources/img/top-banner-02.jpg" alt="Second slide">
       <div class="carousel-caption">
         <div class="carousel-caption-text clearfix">
-            <div>Awesome</div>
-            <div>Environment !</div>
-          </div>
-        <a href="#" 
-          class="btn btn-primary btn-large" 
-          >Learn More</a>
+          <div>Awesome</div>
+          <div>Environment !</div>
+        </div>
+        <a href="#"
+           class="btn btn-primary btn-large"
+        >Learn More</a>
       </div>
     </div>
 
     <!-- Banner 3 -->
     <div class="carousel-item">
-      <img class="d-block w-100" src="assets/img/top-banner-03.jpg" alt="Third slide">
+      <img class="d-block w-100" src="resources/img/top-banner-03.jpg" alt="Third slide">
       <div class="carousel-caption">
         <div class="carousel-caption-text clearfix">
-            <div>Keep Calm</div>
-            <div>And Get Fit</div>
+          <div>Keep Calm</div>
+          <div>And Get Fit</div>
         </div>
-        <a href="#" 
-          class="btn btn-primary btn-large" 
-          data-scroll-goto="0"
-          >Get a free 3 day pass</a>
+        <a href="#"
+           class="btn btn-primary btn-large"
+           data-scroll-goto="0"
+        >Get a free 3 day pass</a>
       </div>
     </div>
   </div>
@@ -151,7 +164,7 @@
 
         <!-- Equipment & Facilities Link -->
         <a class="about-item blink-on-hover" href="#" data-aos="fade-up">
-          <img src="assets/img/about-facilities.jpg" alt="">
+          <img src="resources/img/about-facilities.jpg" alt="">
           <span>Equipment & Facilities</span>
         </a>
 
@@ -160,7 +173,7 @@
 
         <!-- Personal Trainers Link -->
         <a class="about-item blink-on-hover" href="#" data-aos="fade-up" data-aos-delay="200">
-          <img src="assets/img/about-team.jpg" alt="">
+          <img src="resources/img/about-team.jpg" alt="">
           <span>Personal Trainers</span>
         </a>
 
@@ -169,7 +182,7 @@
 
         <!-- Membership Options Link -->
         <a class="about-item blink-on-hover" href="#" data-aos="fade-up" data-aos-delay="400">
-          <img src="assets/img/about-membership.jpg" alt="">
+          <img src="resources/img/about-membership.jpg" alt="">
           <span>Membership Options</span>
         </a>
 
@@ -191,7 +204,7 @@
         <div class="carousel-item active">
           <div class="client-review">
             <div class="client-img">
-              <img src="assets/img/testimonials-face-01.jpg" alt="Ann Doe">
+              <img src="resources/img/testimonials-face-01.jpg" alt="Ann Doe">
             </div>
             <div class="client-text">
               <p>
@@ -210,7 +223,7 @@
         <div class="carousel-item">
           <div class="client-review">
             <div class="client-img">
-              <img src="assets/img/testimonials-face-02.jpg" alt="Lucy Wilson">
+              <img src="resources/img/testimonials-face-02.jpg" alt="Lucy Wilson">
             </div>
             <div class="client-text">
               <p>
@@ -229,7 +242,7 @@
         <div class="carousel-item">
           <div class="client-review">
             <div class="client-img">
-              <img src="assets/img/testimonials-face-03.jpg" alt="John Smith">
+              <img src="resources/img/testimonials-face-03.jpg" alt="John Smith">
             </div>
             <div class="client-text">
               <p>
@@ -250,7 +263,7 @@
         <span class="fa fa-angle-left" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
       </a>
-    
+
       <!-- Right Arrow -->
       <a class="carousel-control-next d-none d-md-flex" href="#testimonials" role="button" data-slide="next">
         <span class="fa fa-angle-right" aria-hidden="true"></span>
@@ -304,7 +317,7 @@
 
     <!-- Class 1 -->
     <div class="class-item blink-on-hover">
-      <img src="assets/img/classes-yoga.jpg" alt="Yoga">
+      <img src="resources/img/classes-yoga.jpg" alt="Yoga">
 
       <div class="class-details">
         <h6>Yoga</h6>
@@ -315,26 +328,26 @@
              data-target="#classDetails"
              data-title="Yoga"
              data-img="img/classes-yoga.jpg"
-            >
+          >
             <i class="fa fa-info"
                data-toggle="tooltip"
                data-placement="bottom"
                title="Class Details"
-              ></i>
+            ></i>
           </a>
           <a href="#"
              data-toggle="tooltip"
              data-html="true"
              data-placement="bottom"
              title="Schedule"
-            ><i class="fa fa-list"></i></a>
+          ><i class="fa fa-list"></i></a>
         </div>
       </div>
     </div>
 
     <!-- Class 2 -->
     <div class="class-item blink-on-hover">
-      <img src="assets/img/classes-pilates.jpg" alt="Pilates">
+      <img src="resources/img/classes-pilates.jpg" alt="Pilates">
 
       <div class="class-details">
         <h6>Pilates</h6>
@@ -345,26 +358,26 @@
              data-target="#classDetails"
              data-title="Pilates"
              data-img="img/classes-pilates.jpg"
-            >
+          >
             <i class="fa fa-info"
                data-toggle="tooltip"
                data-placement="bottom"
                title="Class Details"
-              ></i>
+            ></i>
           </a>
           <a href="#"
              data-toggle="tooltip"
              data-html="true"
              data-placement="bottom"
              title="Schedule"
-            ><i class="fa fa-list"></i></a>
+          ><i class="fa fa-list"></i></a>
         </div>
       </div>
     </div>
 
     <!-- Class 3 -->
     <div class="class-item blink-on-hover">
-      <img src="assets/img/classes-stretching.jpg" alt="Stretching">
+      <img src="resources/img/classes-stretching.jpg" alt="Stretching">
 
       <div class="class-details">
         <h6>Stretching</h6>
@@ -375,26 +388,26 @@
              data-target="#classDetails"
              data-title="Stretching"
              data-img="img/classes-stretching.jpg"
-            >
+          >
             <i class="fa fa-info"
                data-toggle="tooltip"
                data-placement="bottom"
                title="Class Details"
-              ></i>
+            ></i>
           </a>
           <a href="#"
              data-toggle="tooltip"
              data-html="true"
              data-placement="bottom"
              title="Schedule"
-            ><i class="fa fa-list"></i></a>
+          ><i class="fa fa-list"></i></a>
         </div>
       </div>
     </div>
 
     <!-- Class 4 -->
     <div class="class-item blink-on-hover">
-      <img src="assets/img/classes-core.jpg" alt="Core Stability">
+      <img src="resources/img/classes-core.jpg" alt="Core Stability">
 
       <div class="class-details">
         <h6>Core Stability</h6>
@@ -405,19 +418,19 @@
              data-target="#classDetails"
              data-title="Core Stability"
              data-img="img/classes-core.jpg"
-            >
+          >
             <i class="fa fa-info"
                data-toggle="tooltip"
                data-placement="bottom"
                title="Class Details"
-              ></i>
+            ></i>
           </a>
           <a href="#"
              data-toggle="tooltip"
              data-html="true"
              data-placement="bottom"
              title="Schedule"
-            ><i class="fa fa-list"></i></a>
+          ><i class="fa fa-list"></i></a>
         </div>
       </div>
     </div>
@@ -502,12 +515,12 @@
         <!-- General Info Column -->
         <div class="col-md-4 col-sm-6 footer-info-block">
           <h6>Ananda Rec Center</h6>
-          <p>The MUM Recreation Center is a 60,000-square-foot indoor facility, one of the largest indoor university sports facilities in the state of Iowa.
+          <p>The Grace Ananda Recreation Center is a 60,000-square-foot indoor facility, one of the largest indoor university sports facilities in the state of Iowa.
             Open to Everyone!
           </p>
-          
+
           <a href="#" target="_blank" class="btn btn-default btn-full-width btn-buy">More..</a>
-         
+
         </div>
 
         <!-- Contacts Column -->
@@ -517,7 +530,7 @@
           <p>1000 Granville Ave.Fairfield, IA 52556<br>
             641-472-1112<br>
             1-987-654-321<br>
-<%--            <a href="#">contact@mum.edu</a>--%>
+            <a href="#">contact@ananda@gmail.com</a>
           </p>
 
           <ul class="footer-social-links">
@@ -548,38 +561,38 @@
           <div class="row instagram-photos">
             <div class="col-4">
               <a href="#" class="blink-on-hover">
-                <img src="assets/img/instagram-01.jpg" alt="">
+                <img src="resources/img/instagram-01.jpg" alt="">
                 <span class="hover-overlay"></span>
               </a>
             </div>
             <div class="col-4">
               <a href="#" class="blink-on-hover">
-                <img src="assets/img/instagram-02.jpg" alt="">
+                <img src="resources/img/instagram-02.jpg" alt="">
                 <span class="hover-overlay"></span>
               </a>
             </div>
 
             <div class="col-4">
               <a href="#" class="blink-on-hover">
-                <img src="assets/img/instagram-03.jpg" alt="">
+                <img src="resources/img/instagram-03.jpg" alt="">
                 <span class="hover-overlay"></span>
               </a>
             </div>
             <div class="col-4">
               <a href="#" class="blink-on-hover">
-                <img src="assets/img/instagram-04.jpg" alt="">
+                <img src="resources/img/instagram-04.jpg" alt="">
                 <span class="hover-overlay"></span>
               </a>
             </div>
             <div class="col-4">
               <a href="#" class="blink-on-hover">
-                <img src="assets/img/instagram-03.jpg" alt="">
+                <img src="resources/img/instagram-03.jpg" alt="">
                 <span class="hover-overlay"></span>
               </a>
             </div>
             <div class="col-4">
               <a href="#" class="blink-on-hover">
-                <img src="assets/img/instagram-05.jpg" alt="">
+                <img src="resources/img/instagram-05.jpg" alt="">
                 <span class="hover-overlay"></span>
               </a>
             </div>
@@ -589,7 +602,7 @@
     </div>
   </div>
   <div class="footer-copy">
-    <i class="fa fa-copyright"></i> Copyright - Bishwas, Medor and Prakash.
+    <i class="fa fa-copyright"></i> Copyright - Ananda.
   </div>
 </footer>
 
@@ -609,13 +622,13 @@
       </div>
       <div class="modal-body">
 
-        <p class="description">The MUM Recreation Center is a 60,000-square-foot indoor facility, one of the largest indoor university sports facilities in the state of Iowa.
+        <p class="description">The Grace Ananda Recreation Center is a 60,000-square-foot indoor facility, one of the largest indoor university sports facilities in the state of Iowa.
 
-            Open to Everyone!</p>
+          Open to Everyone!</p>
 
         <div class="row">
           <div class="col-sm-5 order-sm-2 text-right">
-            <img class="modal-img" src="assets/img/classes-yoga.jpg" alt="Class Details">
+            <img class="modal-img" src="resources/img/classes-yoga.jpg" alt="Class Details">
           </div>
           <div class="col-sm-7 order-sm-1">
             <h6>What to Wear</h6>
@@ -635,7 +648,7 @@
   </div>
 </div>
 
-<script src="assets/js/scripts.min.js"></script>
+<script src="resources/js/scripts.min.js"></script>
 
 
 </body>
