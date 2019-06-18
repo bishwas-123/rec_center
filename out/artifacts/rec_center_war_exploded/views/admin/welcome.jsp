@@ -16,7 +16,6 @@
                     The MUM Recreation Center is a 60,000-square-foot indoor facility, one of the largest indoor university sports facilities in the state of Iowa.
                     <label style="font-weight: bold;"><%=request.getSession().getAttribute("msg") != null ? request.getSession().getAttribute("msg") : "No Messages.."%></label>
                     <%request.getSession().setAttribute("msg","");%>
-                    <label style="font-weight: bold;"><%=request.getSession().getAttribute("duration") != null ? request.getSession().getAttribute("duration") : ""%></label>
 
                 </p>
                 <hr>

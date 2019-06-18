@@ -31,7 +31,7 @@ $(function(){
             }else{
                 $("#inputEmail").focus();
             }
-            result="<span style='color:green;'>Correct username !</span>";
+           // result="<span style='color:green;'>Correct username !</span>";
         }
         else {
             result = "<span style='color:red;'>Invalid user email !</span>";

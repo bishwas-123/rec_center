@@ -65,11 +65,11 @@
           <a href="#" class="nav-link" id="navHome">Home</a> <!-- to highlight a selected nav item add "active" class -->
         </li>
 
-        <li class="nav-item"><a href="#" class="nav-link">Membership</a></li>
+        <li class="nav-item"><a href="signup" class="nav-link">Membership</a></li>
         <li class="nav-item"><a href="#" class="nav-link">Schedule</a></li>
 
         <li class="nav-item"><a href="#" class="nav-link">Contacts</a></li>
-        <li class="nav-item"><a href="admin" class="nav-link">Login</a></li>
+        <li class="nav-item"><a href="login" class="nav-link">Login</a></li>
       </ul>
     </div>
   </div>

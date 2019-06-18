@@ -12,6 +12,7 @@
     <link href="../resources/css/bootstrap.css" rel="stylesheet" id="bootstrap-css">
     <script src="../resources/js/jquery.js"></script>
     <script src="../resources/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../resources/js/signScript.js"></script>
     <script>var basePath="${contextPath}";</script>
 </head>
 <%
@@ -34,7 +35,7 @@
     <div class="card card-container">
         <img id="profile-img" class="profile-img-card" src="${pageContext.request.contextPath}/resources/img/avatar_2x.png" />
         <p id="profile-name" class="profile-name-card"></p>
-        <form class="form-signin" id="form-signin" method="post" action="${pageContext.request.contextPath}/admin">
+        <form class="form-signin" id="form-signin" method="post" action="${pageContext.request.contextPath}/login">
 
         <span id="reauth-email" class="reauth-email">
           <small class="message">
@@ -58,6 +59,8 @@
                 <%--          <a href="/signup" class="btn btn-lg btn-primary btn-block btn-signin">Sign Up Here</a>--%>
                 <input class="btn btn-lg btn-primary btn-block btn-signin" type="button" id="gotoSignUp" value="Sign Up Here"/>
             </fieldset>
+            <br/>
+            <input class="btn btn-lg btn-primary btn-block btn-signin" id="goHome" type="button" value="Go Home"/>
         </form>
     </div><!-- /card-container -->
 </div><!-- /container -->

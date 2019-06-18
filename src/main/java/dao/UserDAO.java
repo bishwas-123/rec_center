@@ -42,8 +42,6 @@ public class UserDAO {
         }
         return data;
     }
-
-
     public boolean checkUser(User newUser){
         if(users.contains(newUser))
             return true;

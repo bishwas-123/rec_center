@@ -9,12 +9,15 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 import java.io.IOException;
 
-@WebServlet("/admin")
+@WebServlet("/login")
 public class Login extends HttpServlet {
     private UserDAO userDAO = UserDAO.getInstance();
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.sendRedirect(req.getContextPath()+"/views/login.jsp");
+//        req.getSession().invalidate();
+        RequestDispatcher dispatcher=req.getRequestDispatcher(req.getContextPath()+"/views/login.jsp");
+        dispatcher.forward(req,resp);
+//        resp.sendRedirect(req.getContextPath()+"/views/login.jsp");
     }
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
